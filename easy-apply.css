@@ -1,0 +1,101 @@
+.card {
+    border: 1px solid #e0e0e0;
+    display: flex;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    border-radius: 13px;
+    height: auto;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 41%;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 91%;
+    }
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    width: 100% !important;
+    margin-top: 1.1vh;
+}
+
+.card-header .profile-image {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+}
+
+.card-header .profile-info {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info .h2, .profile-info .h4, .profile-info .h5 {
+    display: flex;
+    flex-direction: row;
+    text-align: left !important;
+    width: 100%;
+    justify-content: flex-start !important;
+}
+
+.card-header .easy-apply {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.easy-apply button {
+    width: 81%;
+    padding: 4%;
+    background-color: transparent;
+    border: 0;
+    border-right: 1.7px solid salmon;
+    text-decoration: underline dotted;
+    cursor: pointer;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.card-body div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-body div > h3, .card-body div > h4, .card-body div > ul, .card-body div > p {
+    margin-left: 3.1%;
+    margin-right: 4.1%;
+}
+
+.card-body ul {
+    padding-left: 2.9vw;
+}
+
+.card-body ul li {
+    padding-left: 1vw;
+    margin-top: 0.5vh;
+}

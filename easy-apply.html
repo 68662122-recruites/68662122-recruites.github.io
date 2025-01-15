@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Apply</title>
+    <link rel="stylesheet" href="ux.css">
+    <link rel="stylesheet" href="easy-apply.css">
+    <link rel="stylesheet" href="modal-easy-apply.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago@1.6.7/jquery.timeago.min.js"></script>
+</head>
+<body>
+    <div class="modal-easy-apply" id="modal-easy-apply">
+        <div class="modal-content">
+            <div class="modal-easy-apply-back-button">
+                <div class="modal-easy-apply-back-button-icon">
+                    <button id="modal-easy-apply-back-button-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></button>
+                </div>
+                <div class="modal-easy-apply-action">
+                    <div class="modal-easy-apply-action-label">
+                        <small>Apply to PeopleSolved</small>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-easy-apply-forms">
+                <div>
+                    <div class="resume-section">
+                        <small>Resume</small>
+                    </div>
+                    <div class="resume-instruction">
+                        <small>Be sure to include an updated resume*</small>
+                    </div>
+                    <div class="resume-file" id="resume-file">
+                        <div class="file-type">
+                            <small><!--DOCX--></small>
+                        </div>
+                        <div class="file-details">
+                            <div class="file-name">
+                                <!--filename.docx-->
+                            </div>
+                            <div class="file-info">
+                                <!--421.4KB Last modified 2 days ago-->
+                            </div>
+                        </div>
+                        <div class="file-action">
+                            <button id="resume-file-unselect">Unselect</button>
+                        </div>
+                    </div>
+                    <div class="file-uploader">
+                        <input type="file" id="resume-file-input" accept=".pdf,.doc,.docx" style="display: none;" hidden>
+                        <button id="resume-file-uploader-button">Upload resume</button>
+                    </div>
+                    <div class="file-formats">
+                        <small>PDF, DOC, DOCX (2 MB)</small>
+                    </div>
+                </div>
+                <div>
+                    <div class="cover-letter-section">
+                        <small>Cover Letter</small>
+                    </div>
+                    <div class="cover-letter-instruction">
+                        <small>Be sure that the cover letter is relevant to the role*</small>
+                    </div>
+                    <div class="cover-letter-file">
+                        <div class="file-type">
+                            <small><!--DOCX,DOC,PDF--></small>
+                        </div>
+                        <div class="file-details">
+                            <div class="file-name">
+                                <!--filename.docx-->
+                            </div>
+                            <div class="file-info">
+                                <!--421.4KB Last modified 2 days ago-->
+                            </div>
+                        </div>
+                        <div class="file-action">
+                            <button id="cover-letter-file-unselect">Unselect</button>
+                        </div>
+                    </div>
+                    <div class="file-uploader">
+                        <input type="file" id="cover-letter-file-input" accept=".pdf,.doc,.docx" style="display: none;" hidden>
+                        <button id="cover-letter-file-uploader-button">Upload cover letter</button>
+                    </div>
+                    <div class="file-formats">
+                        <small>PDF, DOC, DOCX (2 MB)</small>
+                    </div>
+                </div>
+                <div class="modal-easy-apply-forms-submit">
+                    <button id="modal-easy-apply-forms-submit-button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="profile-image">
+                <!--<img src="https://placehold.co/41" alt="Nicole Vine">-->
+                <img src="1718220859939.jpg" alt="Nicole Vine">
+            </div>
+            <div class="profile-info">
+                <div class="h2">
+                    <small>Nicole Vine</small>
+                </div>
+                <div class="h4">
+                    <small>Senior Recruitment Consultant</small>
+                </div>
+                <div class="h5">
+                    <time class="timeago" datetime="2025-01-14T09:42:00Z">January 14, 2025</time>
+                </div>
+            </div>
+            <div class="easy-apply">
+                <button id="easy-apply-button">Apply</button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div>
+                <h3>Intermediate Python Developers</h3>
+            </div>
+            <div>
+                <p><strong>Location:</strong> Cape Town, Western Cape, South Africa (hybrid)</p>
+            </div>
+            <div>
+                <h4>Responsibilities:</h4>
+            </div>
+            <div>
+                <ul>
+                    <li>Build and maintain robust back-end functionality for web applications.</li>
+                    <li>Collaborate with front-end developers to create seamless user experiences.</li>
+                    <li>Leverage your knowledge of AWS to deploy and optimize applications.</li>
+                    <li>Debug, troubleshoot, and ensure top-tier performance.</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Requirements:</h4>
+            </div>
+            <div>
+                <ul>
+                    <li>Proficiency in Python and Django (bonus: AWS experience.)</li>
+                    <li>Familiarity with front-end tech like HTML, CSS, and JavaScript.</li>
+                    <li>Strong database design skills (e.g., PostgreSQL.)</li>
+                    <li>A collaborative team player with a knack for problem-solving.</li>
+                </ul>
+            </div>
+            <!----
+            <p><strong>Apply at:</strong> <a href="mailto:nicole.vine@peoplesolved.com">nicole.vine@peoplesolved.com</a></p>
+            <p><a href="https://www.linkedin.com/posts/nicole-vine-506a45113_were-hiring-intermediate-python-developers-activity-7284835942249472000-uCa4?utm_source=share&utm_medium=member_desktop">View LinkedIn Post</a></p>
+            -->
+        </div>
+    </div>
+    <script src="easy-apply.js" defer></script>
+    <script src="modal-easy-apply.js" defer></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+          $("time.timeago").timeago();
+        });
+     </script>
+</body>
+</html>

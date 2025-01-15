@@ -1,0 +1,202 @@
+.modal-easy-apply {
+    display: none;
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    background: #fefefe;
+}
+
+.modal-easy-apply .modal-content {
+    background-color: #fefefe;
+    width: 100%;
+    height: 100%;
+    margin-left: 2.1vw;
+    margin-right: 2.1vw;
+    padding-bottom: 8.1vh;
+}
+
+.modal-easy-apply-back-button {
+    margin-top: 3vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+modal-easy-apply-back-button-icon {
+    width: 25%;
+}
+
+.modal-easy-apply-back-button button {
+    background: transparent;
+    border: 0;
+    margin-left: 2.1vw;
+    cursor: pointer;
+}
+
+.modal-easy-apply-back-button svg {
+    width: 4.2vw;
+    height: 4.2vw;
+}
+
+.modal-easy-apply-action {
+    width: 75%;
+}
+
+@media (min-width: 768px) {
+    .modal-easy-apply-action {
+        text-align: left;
+    }
+}
+
+.modal-easy-apply-forms {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.3vh;
+    text-align: left;
+    padding-left: 2.1vw;
+    padding-right: 2.1vw;
+}
+
+@media (min-width: 768px) {
+    .modal-easy-apply-forms {
+        width: 41%;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-easy-apply-forms {
+        width: 91%;
+    }
+}
+
+.resume-instruction, .cover-letter-instruction {
+    margin-top: 1.3vh;
+}
+
+.resume-file, .cover-letter-file {
+    width: 100%;
+    margin-top: .3vh;
+    display: none;
+    flex-direction: row;
+    border: 1px solid #4f59e9;
+    border-radius: 3px;
+    padding: .3vh;
+}
+
+.resume-file .file-type, .cover-letter-file .file-type {
+    width: 15%;
+    border-radius: 3px 0 0 3px;
+    background-color: rgb(248, 202, 147);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.resume-file .file-details, .cover-letter-file .file-details {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+}
+
+.file-details .file-name, .cover-letter-file .file-name {
+    display: flex;
+    white-space: nowrap;
+    overflow: auto;
+    width: 100%;
+}
+
+.file-details .file-info, .cover-letter-file .file-info {
+    display: flex;
+    margin-top: .9vh;
+    white-space: nowrap;
+    overflow: auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .file-details .file-info, .cover-letter-file .file-info {
+        font-size: 1.21vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .file-details .file-info, .cover-letter-file .file-info {
+        font-size: 2.91vw;
+    }
+}
+
+.resume-file .file-action, .cover-letter-file .file-action {
+    width: 20%;
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 0;
+}
+
+.file-action button {
+    margin-left: 39%;
+    background: transparent;
+    color: #4f59e9;
+    border: 0;
+}
+
+.file-formats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cover-letter-section {
+    display: flex;
+    margin-top: 2.1vh;
+}
+
+.file-uploader {
+    width: 101%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.9vh;
+    margin-right: 0;	
+}
+
+.file-uploader button {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #4f59e9;
+    border-radius: 13px;
+    color: #4f59e9;
+}
+
+.modal-easy-apply-forms-submit {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.1vh;
+    justify-content: flex-end;
+}
+
+#modal-easy-apply-forms-submit-button {
+    background: transparent;
+    border: 0;
+    border-bottom: 2.7px solid salmon;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: underline dotted;
+    padding: 5.1px;
+}

@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+body {
+    text-align: center;
+    align-items: center;
+    padding-top: 5.1vh;
+    padding-bottom: 5.1vh;
+    display: flex;
+}
